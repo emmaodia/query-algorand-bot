@@ -22,7 +22,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.on('message', message => {
+client.on('message', async message => {
 	const args = message.content.split(/ +/);
 	const commandName = args.shift().toLowerCase();
 
